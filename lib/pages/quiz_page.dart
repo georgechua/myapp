@@ -48,13 +48,18 @@ class QuizPageState extends State <QuizPage>{
     return new Stack(
       fit: StackFit.expand,
       children: <Widget>[
-        new Column( // this is our main page
-        children: <Widget>[
-          new AnswerButton(true, () => handleAnswer(true)), //true btn
-          new QuestionText(questionText, questionNumber),
-          new AnswerButton(false, () => handleAnswer(false)), //false btn
-          ],
-        ),
+        new Row(
+         
+          
+        children: [
+              new AnswerButton(true, () => handleAnswer(true)),
+              new QuestionText(questionText, questionNumber),
+              new AnswerButton(false, () => handleAnswer(false)),
+               //true btn
+  
+  ],
+  
+),
         overlayShouldBeVisible == true ? new CorrectWrongOverlay(
           isCorrect,
           ()  {
