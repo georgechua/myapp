@@ -7,6 +7,7 @@ class CorrectWrongOverlay extends StatefulWidget {
 
 final bool _isCorrect;
 final VoidCallback _onTap;
+final bool _isWrong;
 
 CorrectWrongOverlay(this._isCorrect, this._onTap);
 
