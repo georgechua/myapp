@@ -51,32 +51,14 @@ class QuizPageState extends State <QuizPage>{
         new Column( 
         children: [
              
-                Row(
-                  children: <Widget>[
+            
                     new AnswerButton(true, () => handleAnswer(true)),
+                    new QuestionText(questionText, questionNumber),
                     new AnswerButton(false, () => handleAnswer(false)),
-                  ],
-                ),
-             
+                    
+                    
               
-              
-                  new QuestionText(questionText, questionNumber),
-               
-
-              Row(
-                children: <Widget>[
-                  new AnswerButton(true, () => handleAnswer(true)),
-                  new AnswerButton(false, () => handleAnswer(false)),
-                ],
-              ),
-
   ],
-
-
-  
-  
-  
- 
 ),
 
         overlayShouldBeVisible == true ? new CorrectWrongOverlay(

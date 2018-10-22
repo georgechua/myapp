@@ -4,6 +4,7 @@ import './pages/landing.dart';
 import './pages/quiz_page.dart';
 import './pages/score_page.dart';
 import './pages/login.dart';
+import './testlayout.dart';
 
 void main() {
   runApp(new MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         theme: new ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: new QuizPage(),
+        home: new Landing(),
       );
     }
 }
